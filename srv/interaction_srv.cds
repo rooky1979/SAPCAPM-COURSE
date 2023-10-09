@@ -12,6 +12,8 @@ service CatalogService {
     }]
     entity Interactions_Items  as projection on interactions.Interactions_Items;
 
+    function sleep() returns Boolean;
+
     entity V_Interaction as projection on V_INTERACTION;
 
 }
